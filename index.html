@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<style>
+
+html, body {
+    max-height: 380px;
+    max-width: 350px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden
+
+}
+
+.counter-text {
+    position: absolute;
+    top: -100;
+    margin: 30px;
+    max-height: 320px;
+    max-width: 400px;
+    font-size: 300px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    background: url(https://cdn11.bigcommerce.com/s-5luen2shhj/images/stencil/1280x1280/products/3331/24134/wo2-sat15-world-satellite-image-map-cloud-cover-framed__87533__04999.1675591183.jpg?c=2) center;
+    background-size: 1920px 1080px;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+ 
+}
+
+</style>
+<body>
+   <div id="counter" class="counter-text"></div>
+   <script>
+    let examDay = Math.floor(((((Math.floor((new Date(2023, 5, 8, 13).getTime()) - Date.now())/1000)/60)/60)/24))
+
+let counter = document.getElementById('counter')
+counter.innerHTML = examDay
+   </script>
+  </body>
+</html>
